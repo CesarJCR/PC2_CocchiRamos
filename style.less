@@ -1,0 +1,54 @@
+@colorFondo: #f0f0f0;
+@colorMenu: #333;
+@colorTexto: #444;
+@colorHover: #0077cc;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: @colorFondo;
+  color: @colorTexto;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: @colorMenu;
+  padding: 10px;
+
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+
+    li {
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: @colorHover;
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding: 20px;
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  img, video {
+    margin: 10px;
+    border-radius: 10px;
+  }
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
